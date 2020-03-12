@@ -19,10 +19,13 @@ steps:
     repository: $(imageName)
     command: build
     Dockerfile: app/Dockerfile
+    tags: '***/azpipeline1'
+
+
 - task: Docker@2
   displayName: Push an image
   inputs:
     containerRegistry: 'docker repo 1'
     repository: 'chaineddocker/azpipeline1'
     command: 'push'
-    tags: 15
+
