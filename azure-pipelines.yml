@@ -23,6 +23,5 @@ steps:
   inputs:
     containerRegistry: 'docker repo 1'
     repository: '$(imageName)'
-    command: 'build'
-    Dockerfile: '**/Dockerfile'
+    command: 'push'
 
