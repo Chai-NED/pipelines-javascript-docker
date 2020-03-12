@@ -21,7 +21,8 @@ steps:
     Dockerfile: app/Dockerfile
 - task: Docker@2
   inputs:
-    containerRegistry: 'docker repo 1'
+    containerRegistry: 'chaineddocker'
     repository: 'azpipeline1'
     command: 'push'
+    tags: V1
 
