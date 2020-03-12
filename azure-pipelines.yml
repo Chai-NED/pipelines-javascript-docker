@@ -22,8 +22,7 @@ steps:
 - task: Docker@2
   displayName: Push an image
   inputs:
-    containerRegistry: $(dockerHub)
-    repository: $(imageName)
+    containerRegistry: 'docker repo 1'
+    repository: 'chaineddocker/azpipeline1'
     command: 'push'
     tags: V1
-
