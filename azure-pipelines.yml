@@ -25,4 +25,4 @@ steps:
     containerRegistry: 'docker repo 1'
     repository: 'chaineddocker/azpipeline1'
     command: 'push'
-    tags: V1
+    tags: 15
