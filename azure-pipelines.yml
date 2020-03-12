@@ -20,9 +20,10 @@ steps:
     command: build
     Dockerfile: app/Dockerfile
 - task: Docker@2
+  displayName: Push an image
   inputs:
-    containerRegistry: 'chaineddocker'
-    repository: 'azpipeline1'
+    containerRegistry: $(dockerHub)
+    repository: $(imageName)
     command: 'push'
     tags: V1
 
