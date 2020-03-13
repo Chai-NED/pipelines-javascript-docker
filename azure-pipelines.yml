@@ -1,3 +1,5 @@
+# This runs fine with ACR, but got permission issue with DockerHub.
+
 # Docker
 # Build and push an image to Azure Container Registry
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
@@ -37,3 +39,5 @@ stages:
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
           $(tag)
+
+
