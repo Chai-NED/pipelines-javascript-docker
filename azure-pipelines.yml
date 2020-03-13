@@ -14,18 +14,12 @@ variables:
 
 steps:
 - task: Docker@2
-  displayName: Build an image
+  displayName: Build and push an image
   inputs:
-    repository: $(imageName)
-    command: build
+    command: buildAndPush
     Dockerfile: app/Dockerfile
-    tags: 'azpipeline1'
+    containerRegistry: $(dockerRegistryServiceConnection)
+    repository: 'chaineddocker/azpipeline1'
+    tags: 'chai:v1'
 
-
-- task: Docker@2
-  displayName: Push an image
-  inputs:
-    containerRegistry: 'docker repo 1'
-    repository: 'azpipeline1'
-    command: 'push'
 
