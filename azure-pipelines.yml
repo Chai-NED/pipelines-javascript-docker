@@ -20,6 +20,6 @@ steps:
     Dockerfile: app/Dockerfile
     containerRegistry: 'docker repo 1'
     repository: 'azpipeline1'
-    tags: 'chai:v1'
+    tags: 'v1'
 
 
