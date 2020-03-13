@@ -19,7 +19,7 @@ steps:
     repository: $(imageName)
     command: build
     Dockerfile: app/Dockerfile
-    tags: '***/azpipeline1'
+    tags: 'azpipeline1'
 
 
 - task: Docker@2
